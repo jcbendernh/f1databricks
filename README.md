@@ -1,5 +1,5 @@
 # f1databricks
-## Notebooks contained in this repo.
+## Databricks Notebooks
 This repository contains the following notebooks on how to transform the [kaggle - Formula 1 Race Data](https://www.kaggle.com/datasets/jtrotman/formula-1-race-data/data) csv data through the medallion architecture to chat with your data in a Databricks Genie Space.
 - [Silver - All Tables](src/Silver%20-%20All%20Tables.ipynb): This notebook takes .csv files from Kaggle that are uploaded to the bronze volume and transforms them into delta tables in the Silver catalog.  There are two variable to update in the notebook to point to the information for your environment.
 
@@ -14,7 +14,7 @@ This repository contains the following notebooks on how to transform the [kaggle
 You can clone this repo to your GitHUb environment and add this to your Databricks environment via Git Foldeers. For more on this topic, check out [Set up Databricks Git folders](https://learn.microsoft.com/en-us/azure/databricks/repos/repos-setup).
 
 ## Genie Spaces
-You can create a Databricks Genie space to chat with the gold data.  Check out [Set up and manage an AI/BI Genie space](https://learn.microsoft.com/en-us/azure/databricks/genie/set-up) for more information on how to setup an Azure Databricks Genie Space.
+You can create a Databricks Genie space to chat with your gold data.  Check out [Set up and manage an AI/BI Genie space](https://learn.microsoft.com/en-us/azure/databricks/genie/set-up) for more information on how to setup an Azure Databricks Genie Space.
 
 You can enhance your instructions with example below.
 ```
@@ -86,3 +86,9 @@ When the user asks about drivers with the most wins in a certain year.
 
 ## AI Foundry and Copilot Studio
 You can also integrate this Genie Space with both Azure AI Foundry and Copilot Studio.  For more on this topic check out  [Azure Databricks Genie integration with Copilot Studio and Microsoft Foundry is now live!](https://azurefeeds.com/2025/11/19/azure-databricks-genie-integration-with-copilot-studio-and-microsoft-foundry-is-now-live/)
+
+There is one setting you have to turn on at the workspace level in Databricks under Previews, otherwise you get cryptic error messages in Copilot Studio and AI Foundry.
+
+![MCP](img/MCP.png)
+
+For more on this topic, check out [Model Context Protocol (MCP) on Databricks](https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/).
