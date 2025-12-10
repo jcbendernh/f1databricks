@@ -11,6 +11,8 @@ This repository contains the following notebooks on how to transform the [kaggle
     1. silver_catalog_schema - Set this to match your CATALOG.SCHEMA for your silver environment.
     2. gold_catalog_schema - Set this to match your CATALOG.SCHEMA for your silver environment.
 
+You can clone this repo to your GitHUb environment and add this to your Databricks environment via Git Foldeers. For more on this topic, check out [Set up Databricks Git folders](https://learn.microsoft.com/en-us/azure/databricks/repos/repos-setup).
+
 ## Genie Spaces
 You can create a Databricks Genie space to chat with the gold data.  Check out [Set up and manage an AI/BI Genie space](https://learn.microsoft.com/en-us/azure/databricks/genie/set-up) for more information on how to setup an Azure Databricks Genie Space.
 
@@ -82,4 +84,5 @@ When the user asks about drivers with the most wins in a certain year.
      If the user does not specify a year, ask for clarification.
 ```
 
+## AI Foundry and Copilot Studio
 You can also integrate this Genie Space with both Azure AI Foundry and Copilot Studio.  For more on this topic check out  [Azure Databricks Genie integration with Copilot Studio and Microsoft Foundry is now live!](https://azurefeeds.com/2025/11/19/azure-databricks-genie-integration-with-copilot-studio-and-microsoft-foundry-is-now-live/)
