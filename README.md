@@ -6,12 +6,12 @@ This repository contains the following notebooks on how to transform the [kaggle
     1. bronze_file_path - Set this to match your bronze volume path.
     2. silver_catalog_schema - Set this to match your CATALOG.SCHEMA for your silver environment.
 
-- [Gold - All Tables](src/Gold%20-%20All%20Tables.ipynb) : This notebook transforms all the tables into the Silver Catalog to delta tables that act as materialized views in the gold catalog.  There are two variable to update in the notebook to point to the information for your environment.
+- [Gold - All Tables](src/Gold%20-%20All%20Tables.ipynb) : This notebook transforms all the tables into the Silver catalog to delta tables that act as materialized views in the Gold catalog.  There are two variable to update in the notebook to point to the information for your environment.
 
     1. silver_catalog_schema - Set this to match your CATALOG.SCHEMA for your silver environment.
     2. gold_catalog_schema - Set this to match your CATALOG.SCHEMA for your silver environment.
 
-You can clone this repo to your GitHUb environment and add this to your Databricks environment via Git Foldeers. For more on this topic, check out [Set up Databricks Git folders](https://learn.microsoft.com/en-us/azure/databricks/repos/repos-setup).
+You can clone this repo to your GitHUb environment and add this to your Databricks environment via Git Folders. For more on this topic, check out [Set up Databricks Git folders](https://learn.microsoft.com/en-us/azure/databricks/repos/repos-setup).
 
 ## Genie Spaces
 You can create a Databricks Genie space to chat with your gold data.  Check out [Set up and manage an AI/BI Genie space](https://learn.microsoft.com/en-us/azure/databricks/genie/set-up) for more information on how to setup an Azure Databricks Genie Space.
@@ -42,7 +42,7 @@ When the user asks who won the race or who finished on the podium, use the "resu
     3rd place
 
 
-When the user asks about contructor standings, use the "constructor_standings" table.  
+When the user asks about constructor standings, use the "constructor_standings" table.  
 
     Use this SQL pattern:
 
