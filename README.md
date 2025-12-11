@@ -83,10 +83,6 @@ When the user asks about drivers with the most wins in a certain year.
 
      If the user does not specify a year, ask for clarification.
 
-Normalization rule for countries:
-When returning country counts, treat the following as the same country and return only USA as the canonical label: USA, United States, U.S., U.S.A, US, United States of America.
-Always aggregate these variants and report a single row with the total count under USA.
-
 Date Range Rule:
 When I ask for data for the last X years, always include the current year in the range. For example, if today is in 2025 and I ask for the last 20 years, return data from 2006 through 2025 inclusive, not just completed years.
 ```
