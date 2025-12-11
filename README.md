@@ -86,9 +86,12 @@ When the user asks about drivers with the most wins in a certain year.
 Normalization rule for countries:
 When returning country counts, treat the following as the same country and return only USA as the canonical label: USA, United States, U.S., U.S.A, US, United States of America.
 Always aggregate these variants and report a single row with the total count under USA.
+
+Date Range Rule:
+When I ask for data for the last X years, always include the current year in the range. For example, if today is in 2025 and I ask for the last 20 years, return data from 2006 through 2025 inclusive, not just completed years.
 ```
 
-## AI Foundry and Copilot Studio
+## AI Foundry and Copilot Studio using an Azure Databricks MCP Server
 You can also integrate this Genie Space with both Azure AI Foundry and Copilot Studio.  For more on this topic check out  [Azure Databricks Genie integration with Copilot Studio and Microsoft Foundry is now live!](https://azurefeeds.com/2025/11/19/azure-databricks-genie-integration-with-copilot-studio-and-microsoft-foundry-is-now-live/)
 
 There is one setting you have to turn on at the workspace level in Databricks under Previews, otherwise you get cryptic error messages in Copilot Studio and AI Foundry.
@@ -96,3 +99,9 @@ There is one setting you have to turn on at the workspace level in Databricks un
 ![MCP](img/MCP.png)
 
 For more on this topic, check out [Model Context Protocol (MCP) on Databricks](https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/).
+
+
+## AI Foundry and Copilot Studio calling the Genie space directly
+For Copilot Studio, an alternative approach to utilizing the MCP Server would be to call the Genie space directly via an Agent that utilizes a Power Automate Cloud Flow as a tool.  For more on this topic check out my [CopilotGenieAgent](https://github.com/jcbendernh/CopilotGenieAgent) GitHub repo.
+
+For Azure AI Foundry, an alternative approach to utilizing the MCP Server would be to call the Genie space directly via an Agent.  This is constructed within Visual Studio Code instead of the User Interface in Azure AI Foundry. For more on this topic check out my [AIFoundryGenie](https://github.com/jcbendernh/AIFoundryGenie) GitHub repo.
