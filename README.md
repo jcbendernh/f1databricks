@@ -1,6 +1,6 @@
 # f1databricks
 ## Overview
-We decided to create a fun demo dataset for showcasing the integration between Databricks Genie Spaces & Microsoft Copilot and/or AI Foundry.  There are a lot of datasets out there and this one is inspired by the initial work done by [Shubham Yadav](https://www.linkedin.com/in/shubham-utdallas/) a few years ago.  Unfortunately the data source he references is no longer available.  Thus, I did some searching and found the [kaggle - Formula 1 Race Data](https://www.kaggle.com/datasets/jtrotman/formula-1-race-data/data).  This dataset is updated after each F1 race and using the solution in this repo, you can easily update the medallion architecture on a weekly basis during race season.
+We decided to create a fun demo dataset for showcasing the integration between Databricks Genie Spaces & Microsoft Copilot and/or AI Foundry.  There are a lot of datasets out there and this one is inspired by the initial work done by [Shubham Yadav](https://www.linkedin.com/in/shubham-utdallas/) a few years ago.  Unfortunately the data source he references is no longer available.  Thus, I did some searching and found the [kaggle - Formula 1 Race Data](https://www.kaggle.com/datasets/jtrotman/formula-1-race-data/data).  This dataset is updated after each F1 race and using the solution I created in this repo, you can easily update the medallion architecture on a weekly basis during race season.
 
 To do so, clone this repo to your GitHub environment and add your newly cloned GitHub repo to your Databricks environment via Git Folders. For more on this topic, check out [Set up Databricks Git folders](https://learn.microsoft.com/en-us/azure/databricks/repos/repos-setup).
 
@@ -107,12 +107,12 @@ For more on this topic, check out [Model Context Protocol (MCP) on Databricks](h
 
 
 ## AI Foundry and Copilot Studio calling the Genie space directly
-For Copilot Studio, an alternative approach to utilizing the MCP Server would be to call the Genie space directly via an Agent that utilizes a Power Automate Cloud Flow as a tool.  For more on this topic check out my [CopilotGenieAgent](https://github.com/jcbendernh/CopilotGenieAgent) GitHub repo.
+For Copilot Studio, an alternative approach to utilizing the MCP Server would be to call the Genie space directly via an Agent that utilizes a Power Automate Cloud Flow as a tool.  For more on this topic check out my [CopilotGenieAgent](https://github.com/jcbendernh/CopilotGenieAgent) GitHub repo.  This was inspired by the work initially done by [Valter Herman](https://www.linkedin.com/in/valter-e-herman/) and [Melissa Lacefield](https://www.linkedin.com/in/melissa-lacefield-phd-2471116/).
 
 ### Sample Architecture - Azure Databricks - Copilot Studio / Power Automate Cloud Flows 
 ![Azure Databricks - Copilot Studio / Power Automate Cloud Flows](img/dbx-copilotcloudflows.png)
 
-For Azure AI Foundry, an alternative approach to utilizing the MCP Server would be to call the Genie space directly via an Agent.  This is constructed within Visual Studio Code instead of the User Interface in Azure AI Foundry. For more on this topic check out my [AIFoundryGenie](https://github.com/jcbendernh/AIFoundryGenie) GitHub repo.
+For Azure AI Foundry, an alternative approach to utilizing the MCP Server would be to call the Genie space directly via an Agent.  This is constructed within Visual Studio Code instead of the User Interface in the legacy AI Foundry. For more on this topic check out my [AIFoundryGenie](https://github.com/jcbendernh/AIFoundryGenie) GitHub repo.
 
 ### Sample Architecture - Azure Databricks - Legacy AI Foundry via Visual Studio Code 
 ![Azure Databricks - Legacy AI Foundry via Visual Studio Code](img/dbx-aifoundrylegacy.png)
