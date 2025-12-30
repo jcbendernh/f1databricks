@@ -91,8 +91,8 @@ Date Range Rule:
 When I ask for data for the last X years, always include the current year in the range. For example, if today is in 2025 and I ask for the last 20 years, return data from 2006 through 2025 inclusive, not just completed years.
 ```
 
-### Sample Questions
-Below are some sample suggested prompts/sample questions we used to test the Genie Space and also to demonstrate the integration within Copilot Studio and AI Foundry.
+### Suggested Prompts / Sample Questions
+Below are some sample suggested prompts/sample questions we used to test the Genie Space and to demonstrate the integration within Copilot Studio and AI Foundry.
 - What are the constructor standings for 2025?
 - Which drivers finished on the podium in the last race?
 - Who won the United States Grand Prix in 2025?
