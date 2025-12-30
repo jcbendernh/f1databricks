@@ -91,6 +91,16 @@ Date Range Rule:
 When I ask for data for the last X years, always include the current year in the range. For example, if today is in 2025 and I ask for the last 20 years, return data from 2006 through 2025 inclusive, not just completed years.
 ```
 
+### Sample Questions
+Below are some sample suggested prompts/sample questions we used to test the Genie Space and also to demonstrate the integration within Copilot Studio and AI Foundry.
+- What are the constructor standings for 2025?
+- Which drivers finished on the podium in the last race?
+- Who won the United States Grand Prix in 2025?
+- Which drivers have the most wins this year?
+- Which drivers have the most wins in the last 10 years?
+- What are the constructor champions for the past 20 years?
+
+
 ## AI Foundry and Copilot Studio using an Azure Databricks MCP Server
 You can also integrate this Genie Space with both Azure AI Foundry and Copilot Studio.  For more on this topic check out  [Azure Databricks Genie integration with Copilot Studio and Microsoft Foundry is now live!](https://azurefeeds.com/2025/11/19/azure-databricks-genie-integration-with-copilot-studio-and-microsoft-foundry-is-now-live/)<br>
 ### Sample Architecture - Azure Databricks - Copilot Studio
