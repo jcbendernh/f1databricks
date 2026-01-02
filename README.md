@@ -4,6 +4,25 @@ I decided to create a fun Formula 1 demo dataset for showcasing the integration 
 
 To do so, clone this repo to your GitHub environment and add your newly cloned GitHub repo to your Databricks environment via Git Folders. For more on this topic, check out [Set up Databricks Git folders](https://learn.microsoft.com/en-us/azure/databricks/repos/repos-setup).
 
+## Kaggle F1 Data
+You will need to download the .zip file from the [kaggle - Formula 1 Race Data](https://www.kaggle.com/datasets/jtrotman/formula-1-race-data/data) web site.  It contains the following csv files.
+- circuits.csv
+- constructor_results.csv
+- constructor_standings.csv
+- constructors.csv
+- driver_standings.csv
+- drivers.csv
+- lap_times.csv
+- pit_stops.csv
+- qualifying.csv
+- races.csv
+- results.csv
+- seasons.csv
+- sprint_results.csv
+- status.csv
+
+Once these are downloaded and extracted on your local machine, you will need to upload the .csv files to your bronze volume with Databricks so that they can be utilized by the Databricks Notebooks in the next section.
+
 ## Databricks Notebooks
 This repository contains the following notebooks on how to transform the [kaggle - Formula 1 Race Data](https://www.kaggle.com/datasets/jtrotman/formula-1-race-data/data) csv data through the medallion architecture to chat with your data in a Databricks Genie Space.  This solution also utilizes Unity Catalog. Thus Unity Catalog is a prerequisite for this solution.
 - [Silver - All Tables](src/Silver%20-%20All%20Tables.ipynb): This notebook takes the .csv files that are uploaded to the bronze volume from Kaggle and transforms them into delta tables in the Silver catalog.  There are two variable to update in the notebook to point to the information for your environment.
