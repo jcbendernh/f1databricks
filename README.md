@@ -25,12 +25,12 @@ Once these are downloaded and extracted on your local machine, you will need to 
 
 ## Databricks Notebooks
 This repository contains the following notebooks on how to transform the [kaggle - Formula 1 Race Data](https://www.kaggle.com/datasets/jtrotman/formula-1-race-data/data) csv data through the medallion architecture to chat with your data in a Databricks Genie Space.  This solution also utilizes Unity Catalog. Thus Unity Catalog is a prerequisite for this solution.
-- [Silver - All Tables](src/Silver%20-%20All%20Tables.ipynb): This notebook takes the .csv files that are uploaded to the bronze volume from Kaggle and transforms them into delta tables in the Silver catalog.  There are two variable to update in the notebook to point to the information for your environment.
+- [Silver - All Tables](src/Silver%20-%20All%20Tables.ipynb): This notebook takes the .csv files that are uploaded to the bronze volume from Kaggle and transforms them into delta tables in the Silver catalog.  There are two variables to update in the notebook to point to the information for your environment.
 
     1. bronze_file_path - Set this to match your bronze volume path.
     2. silver_catalog_schema - Set this to match your CATALOG.SCHEMA for your silver environment.
 
-- [Gold - All Tables](src/Gold%20-%20All%20Tables.ipynb) : This notebook transforms all the tables into the Silver catalog to delta tables that act as materialized views in the Gold catalog.  There are two variable to update in the notebook to point to the information for your environment.
+- [Gold - All Tables](src/Gold%20-%20All%20Tables.ipynb) : This notebook transforms all the tables into the Silver catalog to delta tables that act as materialized views in the Gold catalog.  There are two variables to update in the notebook to point to the information for your environment.
 
     1. silver_catalog_schema - Set this to match your CATALOG.SCHEMA for your silver environment.
     2. gold_catalog_schema - Set this to match your CATALOG.SCHEMA for your silver environment.
